@@ -1,6 +1,6 @@
 %define name    aws
 %define version 1.39
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Command line access to Amazon S3, EC2 and SQS
 Name:		%{name}
@@ -9,7 +9,7 @@ Release: 	%{release}
 License:	GPLv3
 Group:		Networking/Other
 URL:		http://timkay.com/aws/
-Packager:	Glen Ogilvie <nelg@linuxsolutions.co.nz>
+Packager:	Glen Ogilvie <nelg@mandriva.org>
 Source0:	%{name}-%{version}.tar.bz
 Requires:	curl
 BuildArch: 	noarch
