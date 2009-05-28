@@ -1,6 +1,10 @@
 %define name    aws
 %define version 1.39
-%define release %mkrel 2
+%define release %mkrel 1
+
+# Source tar.bz is created by downloading script from
+# http://timkay.com/aws/aws
+# linked from: http://timkay.com/aws/download.html
 
 Summary:	Command line access to Amazon S3, EC2 and SQS
 Name:		%{name}
@@ -9,7 +13,6 @@ Release: 	%{release}
 License:	GPLv3
 Group:		Networking/Other
 URL:		http://timkay.com/aws/
-Packager:	Glen Ogilvie <nelg@mandriva.org>
 Source0:	%{name}-%{version}.tar.bz
 Requires:	curl
 BuildArch: 	noarch
@@ -30,17 +33,17 @@ aws SQS (Simple Queue Service) is used to control queues.
 
 %prep
 
-%setup
+%setup -q
 
 %build
 
 %install
-rm -fr $RPM_BUILD_ROOT
-install -m 755 -D aws $RPM_BUILD_ROOT/%{_bindir}/aws
-install -m 644 -D README $RPM_BUILD_ROOT/%{_docdir}/aws/README
+rm -fr %{buildroot}
+install -m 755 -D aws %{buildroot}/%{_bindir}/aws
+install -m 644 -D README %{buildroot}/%{_docdir}/aws/README
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -fr %{buildroot}
 
 %files
 %defattr(-,root,root)
