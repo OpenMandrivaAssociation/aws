@@ -1,10 +1,10 @@
 %define name    aws
-%define version 1.39
-%define release %mkrel 2
+%define version 1.75
+%define release %mkrel 1
 
 # Source tar.bz is created by downloading script from
-# http://timkay.com/aws/aws
-# linked from: http://timkay.com/aws/download.html
+# http://timkay.com/aws
+# (https://raw.github.com/timkay/aws/master/aws)
 
 Summary:	Command line access to Amazon S3, EC2 and SQS
 Name:		%{name}
