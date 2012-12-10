@@ -51,3 +51,23 @@ rm -fr %{buildroot}
 %{_bindir}/aws
 
 
+
+
+%changelog
+* Sun Jan 08 2012 Glen Ogilvie <nelg@mandriva.org> 1.75-1mdv2012.0
++ Revision: 758647
+- New release: 1.75
+
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.39-2mdv2011.0
++ Revision: 616673
+- the mass rebuild of 2010.0 packages
+
+* Thu May 28 2009 Glen Ogilvie <nelg@mandriva.org> 1.39-1mdv2010.0
++ Revision: 380306
+- tidy up of spec file based on feedback
+- updated packager
+- import aws
+
+
+* Fri May 01 2009 Glen Ogilvie <nelg@linuxsolutions.co.nz> 1.39-1mdv2009.1
++ RPM build from source
