@@ -1,6 +1,6 @@
 %define name    aws
 %define version 1.75
-%define release %mkrel 1
+%define release 2
 
 # Source tar.bz is created by downloading script from
 # http://timkay.com/aws
