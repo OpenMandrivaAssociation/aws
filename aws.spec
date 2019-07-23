@@ -9,7 +9,7 @@
 Summary:	Command line access to Amazon S3, EC2 and SQS
 Name:		%{name}
 Version:	%{version}
-Release: 	%{release}	
+Release:	1
 License:	GPLv3
 Group:		Networking/Other
 URL:		http://timkay.com/aws/
