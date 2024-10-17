@@ -12,7 +12,7 @@ Version:	%{version}
 Release:	1
 License:	GPLv3
 Group:		Networking/Other
-URL:		http://timkay.com/aws/
+URL:		https://timkay.com/aws/
 Source0:	%{name}-%{version}.tar.bz
 Requires:	curl
 BuildArch: 	noarch
